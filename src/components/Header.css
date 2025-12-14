@@ -130,6 +130,16 @@
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
 }
 
+.cart-button.cart-close {
+  background: linear-gradient(135deg, #ff4757 0%, #ff6348 100%);
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+}
+
+.cart-button.cart-close:hover {
+  transform: scale(1.1) rotate(90deg);
+  box-shadow: 0 6px 20px rgba(255, 71, 87, 0.6);
+}
+
 .cart-count {
   position: absolute;
   top: -5px;

@@ -3,7 +3,7 @@ import { FaShoppingCart, FaBars, FaTimes, FaGlobe } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import './Header.css';
 
-const Header = ({ cartCount, onCartClick, currentPage, onPageChange }) => {
+const Header = ({ cartCount, onCartClick, currentPage, onPageChange, isCartOpen }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { language, toggleLanguage } = useLanguage();
 
@@ -59,9 +59,9 @@ const Header = ({ cartCount, onCartClick, currentPage, onPageChange }) => {
             <span>{language === 'ar' ? 'EN' : 'AR'}</span>
           </button>
 
-          <button className="cart-button" onClick={onCartClick}>
-            <FaShoppingCart />
-            {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
+          <button className={`cart-button ${isCartOpen ? 'cart-close' : ''}`} onClick={onCartClick}>
+            {isCartOpen ? <FaTimes /> : <FaShoppingCart />}
+            {!isCartOpen && cartCount > 0 && <span className="cart-count">{cartCount}</span>}
           </button>
 
           <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

@@ -121,9 +121,10 @@ function App() {
       <div className="App">
         <Header 
           cartCount={cartCount} 
-          onCartClick={() => setIsCartOpen(true)}
+          onCartClick={() => setIsCartOpen(!isCartOpen)}
           currentPage={currentPage}
           onPageChange={handlePageChange}
+          isCartOpen={isCartOpen}
         />
         
         <main className={`main-content ${isPageTransitioning ? 'page-transitioning' : ''}`}>
