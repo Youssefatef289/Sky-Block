@@ -38,13 +38,19 @@ const ShoppingCart = ({ cart, isOpen, onClose, onUpdateQuantity, onRemoveItem, o
                     </div>
                     <div className="item-controls">
                       <div className="quantity-controls">
-                        <button onClick={() => onUpdateQuantity(item.id, item.quantity - 1)}>
-                          <FaMinus />
-                        </button>
-                        <span>{item.quantity}</span>
-                        <button onClick={() => onUpdateQuantity(item.id, item.quantity + 1)}>
-                          <FaPlus />
-                        </button>
+                        {/* حقل إدخال الكمية بدلاً من أزرار الزيادة والنقصان */}
+                        <input
+                          type="number"
+                          min="1"
+                          className="quantity-input"
+                          value={item.quantity}
+                          onChange={(e) => {
+                            const value = parseInt(e.target.value, 10);
+                            // إذا كانت القيمة غير صالحة أو أقل من 1 نرجعها إلى 1
+                            const safeValue = Number.isNaN(value) || value < 1 ? 1 : value;
+                            onUpdateQuantity(item.id, safeValue);
+                          }}
+                        />
                       </div>
                       <button className="remove-btn" onClick={() => onRemoveItem(item.id)}>
                         <FaTrash />

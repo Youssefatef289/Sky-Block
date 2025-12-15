@@ -17,11 +17,11 @@ export const products = [
   // },
   // {
   //   id: 3,
-  //   name: 'طوب أحمر',
+  //   name: 'بلوك أحمر',
   //   price: 0.13, // USD
-  //   description: 'طوب أحمر عالي الجودة للمباني',
+  //   description: 'بلوك أحمر عالي الجودة للمباني',
   //   image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop&q=80',
-  //   category: 'طوب'
+  //   category: 'بلوك'
   // },
   // {
   //   id: 4,
@@ -49,11 +49,11 @@ export const products = [
   // },
   // {
   //   id: 7,
-  //   name: 'طوب أسمنتي',
+  //   name: 'بلوك أسمنتي',
   //   price: 0.21, // USD
-  //   description: 'طوب أسمنتي متين واقتصادي',
+  //   description: 'بلوك أسمنتي متين واقتصادي',
   //   image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop&q=80',
-  //   category: 'طوب'
+  //   category: 'بلوك'
   // },
   // {
   //   id: 8,
@@ -165,7 +165,7 @@ export const products = [
     price: 0.25, // USD
     description: 'بلوك خرساني قياس 15 سم مع كرت ضمان الجودة - متين وقوي للبناء',
     image: '/imag/WhatsApp Image 2025-12-13 at 8.19.55 PM.jpeg',
-    category: 'طوب'
+    category: 'بلوك'
   },
   {
     id: 22,
@@ -173,7 +173,7 @@ export const products = [
     price: 0.22, // USD
     description: 'بلوك خرساني قياس 12 سم مع كرت ضمان الجودة والصلابة - متين وقوي للبناء',
     image: '/imag/WhatsApp Image 2025-12-13 at 8.19.55 PM (1).jpeg',
-    category: 'طوب'
+    category: 'بلوك'
   },
   {
     id: 23,
@@ -205,7 +205,7 @@ export const products = [
     price: 0.20, // USD
     description: 'بلوك خرساني قياس 10 سم مع كرت ضمان الجودة والصلابة - متين وقوي للبناء',
     image: '/imag/WhatsApp Image 2025-12-13 at 8.20.00 PM.jpeg',
-    category: 'طوب'
+    category: 'بلوك'
   },
   {
     id: 27,
@@ -237,7 +237,7 @@ export const products = [
     price: 3.5, // USD
     description: 'بلوك زينة ديكوري بجميع القياسات - تصميمات عربية وإسلامية أنيقة بفتحات وزخارف متقنة، مناسب للجدران والأسوار والحدائق والديكورات الخارجية والداخلية',
     image: '/imag/WhatsApp Image 2025-12-13 at 8.20.03 PM (1).jpeg',
-    category: 'طوب'
+    category: 'بلوك'
   },
   {
     id: 31,
@@ -245,7 +245,7 @@ export const products = [
     price: 0.35, // USD
     description: 'بلوك عازل حراري وعازل صوت بجميع القياسات مع كرت ضمان - يوفر عزل حراري ممتاز وعزل صوتي عالي الجودة، مناسب للمباني السكنية والتجارية لتحقيق الراحة وتوفير الطاقة',
     image: '/imag/WhatsApp Image 2025-12-13 at 8.20.03 PM (3).jpeg',
-    category: 'طوب'
+    category: 'بلوك'
   },
   {
     id: 32,
@@ -253,15 +253,15 @@ export const products = [
     price: 0.28, // USD
     description: 'بلوك خرساني قياس 20 سم مع كرت ضمان الجودة والصلابة - متين وقوي للبناء، مناسب للأعمال الإنشائية الكبيرة',
     image: '/imag/WhatsApp Image 2025-12-13 at 8.30.41 PM.jpeg',
-    category: 'طوب'
+    category: 'بلوك'
   },
   {
     id: 33,
-    name: 'طوب خرساني مجوف',
+    name: 'بلوك خرساني مجوف',
     price: 0.23, // USD
-    description: 'طوب خرساني مجوف عالي الجودة - متين وخفيف الوزن، مناسب لجميع أعمال البناء والجدران الحاملة',
+    description: 'بلوك خرساني مجوف عالي الجودة - متين وخفيف الوزن، مناسب لجميع أعمال البناء والجدران الحاملة',
     image: '/imag/WhatsApp Image 2025-12-13 at 8.20.03 PM (2).jpeg',
-    category: 'طوب'
+    category: 'بلوك'
   },
   {
     id: 34,
