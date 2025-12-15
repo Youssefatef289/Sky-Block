@@ -63,39 +63,30 @@ const HomePage = ({ onNavigateToProducts, onAddToCart }) => {
             </div>
           </div>
           <div className="hero-image">
-            <div className="hero-main-card">
-              <div className="card-glow"></div>
-              <div className="card-content">
-                <FaAward size={60} />
-                <h3>{t('qualityGuarantee')}</h3>
-                <p>{t('qualityGuaranteeDesc')}</p>
+            <div className="hero-photo-card">
+              <div className="hero-photo-overlay"></div>
+              <img
+                src="/imag/hero .jpeg"
+                alt="Sky Block main building"
+                className="hero-photo"
+              />
+              <div className="hero-photo-label">
+                <FaAward />
+                <span>{t('qualityGuarantee')}</span>
               </div>
             </div>
-            <div className="floating-card card-1">
-              <div className="card-icon">
+            <div className="hero-info-band">
+              <div className="hero-info-item">
                 <FaTruck />
+                <span>{t('fastDelivery')}</span>
               </div>
-              <div className="card-text">
-                <span className="card-title">{t('fastDelivery')}</span>
-                <span className="card-subtitle">24 {t('hours')}</span>
-              </div>
-            </div>
-            <div className="floating-card card-2">
-              <div className="card-icon">
+              <div className="hero-info-item">
                 <FaShieldAlt />
+                <span>{t('qualityGuarantee')}</span>
               </div>
-              <div className="card-text">
-                <span className="card-title">{t('qualityGuarantee')}</span>
-                <span className="card-subtitle">100%</span>
-              </div>
-            </div>
-            <div className="floating-card card-3">
-              <div className="card-icon">
+              <div className="hero-info-item">
                 <FaHeadset />
-              </div>
-              <div className="card-text">
-                <span className="card-title">{t('support247')}</span>
-                <span className="card-subtitle">24/7</span>
+                <span>{t('support247')}</span>
               </div>
             </div>
           </div>
