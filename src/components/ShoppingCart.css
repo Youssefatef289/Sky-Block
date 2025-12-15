@@ -221,9 +221,9 @@
 /* نص اكتب كميتك أعلى المودال */
 .cart-note {
   padding: 10px 20px 0;
-  font-size: 0.95rem;
+  font-size: 1.6rem;
   color: #555;
-  text-align: right;
+  text-align: center;
 }
 
 .remove-btn {
@@ -388,6 +388,17 @@
     padding: 15px;
   }
 
+  .quantity-input {
+    width: 80px;
+    padding: 7px 9px;
+    font-size: 0.9rem;
+  }
+
+  .cart-note {
+    padding: 8px 16px 0;
+    font-size: 1.4rem;
+  }
+
   .cart-total {
     font-size: 1.1rem;
     padding: 15px;
@@ -463,6 +474,17 @@
 
   .cart-footer {
     padding: 12px;
+  }
+
+  .quantity-input {
+    width: 78px;
+    padding: 7px 9px;
+    font-size: 0.9rem;
+  }
+
+  .cart-note {
+    padding: 6px 12px 2px;
+    font-size: 1.2rem;
   }
 
   .cart-total {
@@ -541,6 +563,17 @@
 
   .total-price {
     font-size: 1.1rem;
+  }
+
+  .quantity-input {
+    width: 70px;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+
+  .cart-note {
+    padding: 6px 10px 2px;
+    font-size: 1.05rem;
   }
 
   .clear-cart-btn,
