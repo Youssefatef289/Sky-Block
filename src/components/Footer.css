@@ -368,6 +368,31 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
+.footer-designer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-designer p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.designer-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.designer-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
 @media (max-width: 968px) {
   .footer-content {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

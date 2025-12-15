@@ -142,6 +142,19 @@ const Footer = ({ onPageChange }) => {
               <span>|</span>
               <a href="#refund">{t('returnPolicy')}</a>
             </div>
+            <div className="footer-designer">
+              <p>
+                {language === 'ar' ? 'تم تصميم الموقع من' : 'Website designed by'}{' '}
+                <a 
+                  href="https://youssefatef289.github.io/Protfolio-YoussefAtefmaarouf/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="designer-link"
+                >
+                  يوسف عاطف
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
