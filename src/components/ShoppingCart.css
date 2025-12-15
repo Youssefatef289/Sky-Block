@@ -161,10 +161,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: white;
-  border-radius: 20px;
-  padding: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: transparent;
 }
 
 .quantity-controls button {
@@ -189,6 +186,44 @@
   min-width: 30px;
   text-align: center;
   font-weight: 600;
+}
+
+/* حقل الكمية الجديد داخل السلة */
+.quantity-input {
+  width: 90px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 2px solid #764ba2;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(118, 75, 162, 0.25);
+  transition: all 0.2s ease;
+}
+
+.quantity-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* نص اكتب كميتك أعلى المودال */
+.cart-note {
+  padding: 10px 20px 0;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: right;
 }
 
 .remove-btn {

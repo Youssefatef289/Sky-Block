@@ -20,6 +20,12 @@ const ShoppingCart = ({ cart, isOpen, onClose, onUpdateQuantity, onRemoveItem, o
         </div>
 
         <div className="cart-content">
+          {/* تعليمات أعلى المودال */}
+          {cart.length > 0 && (
+            <div className="cart-note">
+              {language === 'ar' ? 'اكتب كميتك' : 'Enter your quantity'}
+            </div>
+          )}
           {cart.length === 0 ? (
             <div className="empty-cart">
               <FaShoppingCart size={60} />
