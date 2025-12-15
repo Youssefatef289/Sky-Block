@@ -66,7 +66,7 @@ const HomePage = ({ onNavigateToProducts, onAddToCart }) => {
             <div className="hero-photo-card">
               <div className="hero-photo-overlay"></div>
               <img
-                src="/imag/hero .jpeg"
+                src="/imag/hero.jpeg"
                 alt="Sky Block main building"
                 className="hero-photo"
               />
