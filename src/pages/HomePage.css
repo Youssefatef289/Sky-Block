@@ -26,6 +26,7 @@
   padding: 100px 30px;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 55%, #f4ecff 100%);
 }
 
 .hero-background {
@@ -35,99 +36,92 @@
   right: 0;
   bottom: 0;
   z-index: 0;
+  pointer-events: none;
 }
 
 .hero-gradient {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  animation: gradientShift 15s ease infinite;
+  top: -120px;
+  right: -120px;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle at center, rgba(118, 75, 162, 0.35) 0%, transparent 65%);
+  filter: blur(4px);
+  animation: heroGlow 14s ease-in-out infinite;
 }
 
-@keyframes gradientShift {
+@keyframes heroGlow {
   0%, 100% {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.9;
   }
   50% {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 50%, #764ba2 100%);
+    transform: translate3d(-20px, 20px, 0) scale(1.05);
+    opacity: 0.7;
   }
 }
 
 .hero-pattern {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-  animation: patternMove 20s ease infinite;
-}
-
-@keyframes patternMove {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(30px, 30px);
-  }
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 40%, rgba(255, 255, 255, 0.4) 0%, transparent 55%),
+    radial-gradient(circle at 75% 80%, rgba(102, 126, 234, 0.08) 0%, transparent 60%);
+  opacity: 0.65;
 }
 
 .floating-shapes {
   position: absolute;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 .shape {
   position: absolute;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  animation: floatShape 20s ease-in-out infinite;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+  animation: floatShape 18s ease-in-out infinite;
 }
 
 .shape-1 {
-  width: 300px;
-  height: 300px;
-  top: 10%;
-  right: 10%;
+  width: 220px;
+  height: 220px;
+  top: 12%;
+  right: 8%;
   animation-delay: 0s;
 }
 
 .shape-2 {
-  width: 200px;
-  height: 200px;
-  bottom: 20%;
-  left: 15%;
+  width: 160px;
+  height: 160px;
+  bottom: 18%;
+  left: 12%;
   animation-delay: 5s;
 }
 
 .shape-3 {
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  left: 50%;
+  width: 120px;
+  height: 120px;
+  top: 46%;
+  left: 52%;
   animation-delay: 10s;
 }
 
 @keyframes floatShape {
   0%, 100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.3;
-  }
-  33% {
-    transform: translate(50px, -50px) scale(1.1);
+    transform: translate3d(0, 0, 0) scale(1);
     opacity: 0.5;
   }
+  33% {
+    transform: translate3d(26px, -28px, 0) scale(1.04);
+    opacity: 0.9;
+  }
   66% {
-    transform: translate(-30px, 30px) scale(0.9);
-    opacity: 0.4;
+    transform: translate3d(-20px, 18px, 0) scale(0.98);
+    opacity: 0.7;
   }
 }
 
@@ -140,10 +134,14 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  padding: 40px 50px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
 }
 
 .hero-text {
-  color: white;
+  color: #111827;
 }
 
 .hero-badge {
@@ -166,7 +164,7 @@
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
   margin-bottom: 30px;
   line-height: 1.1;
@@ -193,7 +191,7 @@
 }
 
 .hero-description {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   margin-bottom: 40px;
   line-height: 1.9;
   opacity: 0.95;
@@ -227,9 +225,9 @@
 }
 
 .btn-primary {
-  background: white;
-  color: #667eea;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  box-shadow: 0 14px 35px rgba(102, 126, 234, 0.45);
 }
 
 .btn-primary::before {
@@ -252,7 +250,7 @@
 
 .btn-primary:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.6);
 }
 
 .btn-primary span,
@@ -262,17 +260,17 @@
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
+  background: #ffffff;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: white;
+  background: #f9fafb;
+  border-color: #d1d5db;
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.12);
 }
 
 .hero-stats {
